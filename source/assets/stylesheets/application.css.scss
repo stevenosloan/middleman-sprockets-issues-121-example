@@ -5,3 +5,33 @@
 @import "neat";
 
 @import "global";
+
+@font-face {
+  font-family: "Montserrat";
+  font-style:  normal;
+  font-weight: 400;
+  src: font-url("Montserrat/Montserrat-regular.eot?#iefix") format("embedded-opentype"),
+       font-url("Montserrat/Montserrat-regular.woff2") format("woff2"),
+       font-url("Montserrat/Montserrat-regular.woff") format("woff"),
+       font-url("Montserrat/Montserrat-regular.ttf") format("truetype"),
+       font-url("Montserrat/Montserrat-regular.svg#Montserrat") format("svg");
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-style:  bold;
+  font-weight: 700;
+  src: font-url("Montserrat/Montserrat-700.eot?#iefix") format("embedded-opentype"),
+       font-url("Montserrat/Montserrat-700.woff2") format("woff2"),
+       font-url("Montserrat/Montserrat-700.woff") format("woff"),
+       font-url("Montserrat/Montserrat-700.ttf") format("truetype"),
+       font-url("Montserrat/Montserrat-700.svg#Montserrat") format("svg");
+}
+
+$font-stack: Montserrat, Helvetica, sans-serif;
+
+body,
+h1, h2, h3, h4, h5, h6,
+p, ul, ol, dl, blockquote {
+  font-family: $font-stack;
+}
