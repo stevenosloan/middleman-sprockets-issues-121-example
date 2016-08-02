@@ -17,8 +17,8 @@ configure :development do
 end
 
 configure :build do
-  activate :relative_assets
   activate :asset_hash
+  activate :relative_assets
 end
 
 activate :deploy do |deploy|
